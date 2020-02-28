@@ -5,7 +5,7 @@ namespace Stripe
     using Newtonsoft.Json;
     using Stripe.Infrastructure;
 
-    public class Payout : StripeEntity<Payout>, IHasId, IHasMetadata, IHasObject, IBalanceTransactionSource
+    public class Payout : StripeEntity<Payout>, IBalanceTransactionSource, IHasId, IHasMetadata, IHasObject
     {
         [JsonProperty("id")]
         public string Id { get; set; }
@@ -74,7 +74,6 @@ namespace Stripe
         #endregion
 
         #region Expandable Failure Balance Transaction
-
         [JsonIgnore]
         public string FailureBalanceTransactionId
         {
@@ -118,7 +117,6 @@ namespace Stripe
         [JsonProperty("status")]
         public string Status { get; set; }
 
-        // example: bank_account
         [JsonProperty("type")]
         public string Type { get; set; }
     }

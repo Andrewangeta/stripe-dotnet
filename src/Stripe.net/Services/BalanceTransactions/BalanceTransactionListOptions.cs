@@ -8,8 +8,7 @@ namespace Stripe
     public class BalanceTransactionListOptions : ListOptionsWithCreated
     {
         [JsonProperty("available_on")]
-        [JsonConverter(typeof(AnyOfConverter))]
-        public AnyOf<DateTime?, DateRangeOptions> AvailableOn { get; set; }
+        public todo-thingy AvailableOn { get; set; }
 
         [JsonProperty("currency")]
         public string Currency { get; set; }

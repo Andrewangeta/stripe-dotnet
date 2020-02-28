@@ -14,6 +14,6 @@ namespace Stripe
         public string Invoice { get; set; }
 
         [JsonProperty("pending")]
-        public bool? Pending { get; set; }
+        public bool Pending { get; set; }
     }
 }

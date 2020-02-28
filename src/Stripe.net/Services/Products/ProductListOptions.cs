@@ -8,13 +8,13 @@ namespace Stripe
     public class ProductListOptions : ListOptionsWithCreated
     {
         [JsonProperty("active")]
-        public bool? Active { get; set; }
+        public bool Active { get; set; }
 
         [JsonProperty("ids")]
         public List<string> Ids { get; set; }
 
         [JsonProperty("shippable")]
-        public bool? Shippable { get; set; }
+        public bool Shippable { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }

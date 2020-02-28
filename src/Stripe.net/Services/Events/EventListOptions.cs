@@ -8,7 +8,7 @@ namespace Stripe
     public class EventListOptions : ListOptionsWithCreated
     {
         [JsonProperty("delivery_success")]
-        public bool? DeliverySuccess { get; set; }
+        public bool DeliverySuccess { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }

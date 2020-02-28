@@ -8,7 +8,7 @@ namespace Stripe
     public class FileLinkListOptions : ListOptionsWithCreated
     {
         [JsonProperty("expired")]
-        public bool? Expired { get; set; }
+        public bool Expired { get; set; }
 
         [JsonProperty("file")]
         public string File { get; set; }

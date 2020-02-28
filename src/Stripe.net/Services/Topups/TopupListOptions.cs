@@ -7,5 +7,10 @@ namespace Stripe
 
     public class TopupListOptions : ListOptionsWithCreated
     {
+        [JsonProperty("amount")]
+        public todo-thingy Amount { get; set; }
+
+        [JsonProperty("status")]
+        public string Status { get; set; }
     }
 }

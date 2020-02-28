@@ -8,8 +8,7 @@ namespace Stripe
     public class PayoutListOptions : ListOptionsWithCreated
     {
         [JsonProperty("arrival_date")]
-        [JsonConverter(typeof(AnyOfConverter))]
-        public AnyOf<DateTime?, DateRangeOptions> ArrivalDate { get; set; }
+        public todo-thingy ArrivalDate { get; set; }
 
         [JsonProperty("destination")]
         public string Destination { get; set; }
