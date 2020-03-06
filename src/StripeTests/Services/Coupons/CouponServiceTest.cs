@@ -126,6 +126,16 @@ namespace StripeTests
             Assert.Equal("coupon", coupons[0].Object);
         }
 
+#if !NET45
+        [Fact]
+        public async Task ListAutoPagingAsync()
+        {
+            var coupon = await this.service.ListAutoPagingAsync(this.listOptions).FirstAsync();
+            Assert.NotNull(coupon);
+            Assert.Equal("coupon", coupon.Object);
+        }
+#endif
+
         [Fact]
         public void Update()
         {
